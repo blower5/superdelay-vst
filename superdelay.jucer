@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="tbnIfv" name="superdelay" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" companyName="blower W.T."
+              companyCopyright="2024" cppLanguageStandard="20" version="1.0.0"
+              pluginFormats="buildAU,buildStandalone,buildVST,buildVST3" companyWebsite="blower.neocities.org"
+              pluginVST3Category="Delay,Fx">
+  <MAINGROUP id="TDajFH" name="superdelay">
+    <GROUP id="{893FCE89-98C3-9EBC-CBEE-045BF9F8CC00}" name="Source">
+      <GROUP id="{153EFCE8-EEE8-DCE0-4C35-AAA3502DB8BF}" name="img">
+        <FILE id="rxgyaa" name="author.png" compile="0" resource="1" file="Source/img/author.png"/>
+        <FILE id="v7OnK8" name="fbinvertedbutton.png" compile="0" resource="1"
+              file="Source/img/fbinvertedbutton.png"/>
+        <FILE id="oZfqgx" name="fbinvertedbuttondown.png" compile="0" resource="1"
+              file="Source/img/fbinvertedbuttondown.png"/>
+        <FILE id="oHP9Uk" name="fbinvertedbuttonon.png" compile="0" resource="1"
+              file="Source/img/fbinvertedbuttonon.png"/>
+        <FILE id="liFuic" name="stereobutton.png" compile="0" resource="1"
+              file="Source/img/stereobutton.png"/>
+        <FILE id="b51RNQ" name="stereobuttondown.png" compile="0" resource="1"
+              file="Source/img/stereobuttondown.png"/>
+        <FILE id="SUJG3l" name="stereobuttonon.png" compile="0" resource="1"
+              file="Source/img/stereobuttonon.png"/>
+        <FILE id="mW3yIN" name="timeislockedbutton.png" compile="0" resource="1"
+              file="Source/img/timeislockedbutton.png"/>
+        <FILE id="fTjhFx" name="timeislockedbuttondown.png" compile="0" resource="1"
+              file="Source/img/timeislockedbuttondown.png"/>
+        <FILE id="TgX8TJ" name="timeislockedbuttonon.png" compile="0" resource="1"
+              file="Source/img/timeislockedbuttonon.png"/>
+        <FILE id="Sf1EcJ" name="logo.png" compile="0" resource="1" file="Source/img/logo.png"/>
+      </GROUP>
+      <FILE id="XhJoLc" name="XYPad.cpp" compile="1" resource="0" file="Source/XYPad.cpp"/>
+      <FILE id="FPti82" name="XYPad.h" compile="0" resource="0" file="Source/XYPad.h"/>
+      <FILE id="spoEbK" name="FilterDelay.cpp" compile="1" resource="0" file="Source/FilterDelay.cpp"/>
+      <FILE id="PjofvR" name="FilterDelay.h" compile="0" resource="0" file="Source/FilterDelay.h"/>
+      <FILE id="MG7ZOX" name="Graffix.cpp" compile="1" resource="0" file="Source/Graffix.cpp"/>
+      <FILE id="xYn1hU" name="Graffix.h" compile="0" resource="0" file="Source/Graffix.h"/>
+      <FILE id="S0czLA" name="Visualizers.h" compile="0" resource="0" file="Source/Visualizers.h"/>
+      <FILE id="qfr3v3" name="Visualizers.cpp" compile="1" resource="0" file="Source/Visualizers.cpp"/>
+      <FILE id="bHv8Hg" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="eGlXL9" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="xtpbh7" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="bDuoju" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="superdelay"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="superdelay"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../codes/JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../codes/JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
